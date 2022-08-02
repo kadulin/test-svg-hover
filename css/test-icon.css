@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  /* --color1: #212121; */
+  color: #212121;
+  --color1: currentColor;
+
+  --color2: #2196f3;
+  /* --color2: currentColor; */
+
+  /* --color1-1: red;
+  --color2-1: white; */
+}
+
+.icon {
+}
+.icon__link {
+}
+.icon__svg {
+  background-color: #fff;
+  /* color: --color1; */
+
+  transition: color 1000ms linear, background-color 1000ms linear,
+    --color1 1000ms linear;
+}
+
+.icon__link:hover .icon__svg {
+  background-color: grey;
+  border: 1px solid red;
+  color: white;
+
+  --color2: yellow;
+}
